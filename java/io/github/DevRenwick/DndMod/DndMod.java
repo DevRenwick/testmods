@@ -17,6 +17,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import io.github.DevRenwick.DndMod.core.init.ItemsInit;
+
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -32,6 +34,8 @@ public class DndMod
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
         
+        ItemsInit.ITEMS.register(bus);
+        
         MinecraftForge.EVENT_BUS.register(this);
         
         
@@ -42,4 +46,3 @@ public class DndMod
 
     }
 }
-
