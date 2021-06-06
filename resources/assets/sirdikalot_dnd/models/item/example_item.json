@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+    "textures": {
+    	"layer0": "sirdikalot_dnd:items/example_item.png"   
+    }
+}e

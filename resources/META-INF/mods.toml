@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+
+[[mods]] #mandatory
+modId="sirdikalot_dnd" #mandatory
+version="1.0" #mandatory
+displayName="Sir Dikalot's DnD Mod" #mandatory
+logoFile="examplemod.png" #optional
+credits="Thanks for this example mod goes to Java" #optional
+authors="DevRenwick" #optional
+description='''
+This mod is design to give minecraft a dnd experience with the addtion of classes, monsters, weapons, and more!
+
+'''
+[[dependencies.DndMod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.DndMod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
